@@ -1,0 +1,79 @@
+.page {
+    display: block;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-file-upload {
+    /* height: 20rem;
+    width: 33rem; */
+    max-width: 65%;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+#input-file-upload {
+    display: none;
+}
+
+#label-file-upload {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 1px;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color: #75b1f1;
+    /* border-color: #cbd5e1;
+    background-color: #f8fafc; */
+    background-color: white;
+    margin: auto;
+
+}
+
+#label-file-upload.drag-active {
+    background-color: #ffffff;
+}
+
+.upload-button {
+    cursor: pointer;
+    padding: 0.25rem;
+    font-size: 1rem;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    background-color: transparent;
+}
+
+.upload-button:hover {
+    text-decoration-line: underline;
+}
+
+#drag-file-element {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.file-img {
+    max-width: 250px;
+    margin: 20px auto;
+}
+
+.file-pdf {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    height: 100%;
+    max-height: 400px;
+}

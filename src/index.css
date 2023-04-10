@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); 
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body,
+#root,
+.App {
+    margin:0;
+    padding:0;
+    height:100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #222222;
+    box-sizing: border-box;
+}
+
+.active  {
+    background-color:#00c52a ;
+    color: white;
+    border-radius: 6px;
+    padding: 10px 24px;
+}   
+
+.search {
+    position: relative;
+    width: 45px;
+    height: 60px;
+    background: #fff;
+    border-radius: 5px;
+    /* transition: 0.5s; */
+    /* box-shadow: 0 0 0 5px #2573ef; */
+    overflow: hidden; 
+}
+
+.search.active{
+    width: 740px;
+    /* border: 1px solid red; */
+    background: #F5F5F5;
+    
+}
+
+
+/* .search .input {
+    position: relative;
+    width: 680px;
+    height: 60px;
+    left:45px;
+    bottom: 10px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+.search .input input{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size:18px;
+    padding: 10px 0;
+    background: #F5F5F5;
+    box-shadow: none;
+} */
+
+/* Popup style */
+/* .popup-box {
+    position: fixed;
+    background: #00000050;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+  
+  .box {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    max-height: 70vh;
+    margin-top: calc(100vh - 85vh - 20px);
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #999;
+    overflow: auto;
+  } */
+   
+  /* .close-icon {
+    content: 'x';
+    cursor: pointer;
+    position: fixed;
+    right: calc(15% - 30px);
+    top: calc(100vh - 85vh - 33px);
+    background: #ededed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #999;
+    font-size: 20px;
+  } */
+
+  
+
+  select:required:invalid {
+    color: #999999;
+  }
+
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px white inset !important;
+  }
+
+  input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+  }
+
+  .show-password-icon,  .show-confirm-pass-icon, .show-current-pass-icon{
+    float: right;
+    position: unset;
+    display: flex;
+    top: 0;
+    margin-top: -38px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+
+  .shadow-on-right{
+    box-shadow:  0 0 30px rgba(0, 0, 0, 0.07);
+    clip-path: inset(0px -15px 0px 0px);
+  }
+
+  .shadow-on-bottom{
+    box-shadow: 0 8px 4px -6px rgba(0, 0, 0, 0.05);
+  }
